@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 import matplotlib.pyplot as plt
-from CliffClasses import *
+from cliff_Classes import *
 
 # setting the environment and hyperparameters
 env = gym.make("CliffWalking-v0")
@@ -11,7 +11,6 @@ epsilon = 0.1
 numberOfEpisodes = 500
 
 # sarsa implementation
-
 sarsa = sarsa_learning(env, alpha, gamma, epsilon, numberOfEpisodes)
 sarsa.simulateEpisodes()
 sarsa_rewards = sarsa.get_rewards()
