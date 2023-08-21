@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 import matplotlib.pyplot as plt
-from cliff_Classes import *
+from cliff_classes import *
 
 # setting the environment and hyperparameters
 env = gym.make("CliffWalking-v0")
