@@ -45,7 +45,6 @@ class sarsa_learning():
                 
                 if not terminated:
                     error = reward + self.gamma * self.Qmatrix[newState, actionAprime] - self.Qmatrix[currentState, actionA]
-                    
                     self.Qmatrix[currentState, actionA] = self.Qmatrix[currentState, actionA] + self.alpha * error
                 else:
                     error = reward - self.Qmatrix[currentState, actionA]
